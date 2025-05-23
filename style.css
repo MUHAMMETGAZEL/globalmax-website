@@ -1049,3 +1049,21 @@ h3 {
     justify-content: center;
   }
 }
+@media (max-width: 600px) {
+  .product-slide.first-product .product-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* صورتان في الصف */
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .product-slide.first-product .product-card img {
+    width: 100%;
+    max-width: 140px; /* تحكم بحجم الصورة */
+  }
+}
+@media (max-width: 768px) {
+  .contact-right img {
+    transform: rotate(-90deg);
+  }
+}
